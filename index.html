@@ -4,34 +4,72 @@
     <meta charset="utf-8" />
     <title>Formulario</title>
   </head>
-  <body>
+  <body style="margin: 10px; background-color: white">
     <div>
       <label for="categoria">categorias: </label>
-      <select name="categoria" id="categoria">
+      <select
+        style="background-color: black; color: white"
+        name="categoria"
+        id="categoria"
+      >
         <option value="funcionario">Funcionário</option>
         <option value="gerente">Gerente</option>
         <option value="adm" selected>Adm</option>
       </select>
     </div>
     <div>
-        <label>Selecione as suas cores preferidas: </label>
-        <br/>
-        <input type="checkbox" name="azul" id="azul"/>
-        <label for="azul">azul</label>
-        <br/>
-        <input type="checkbox" name="verde" id="verde"/>
-        <label for="verde">verde</label>
-        <br/>
-        <input type="checkbox" name="vermelho" id="vermelho"/>
-        <label for="vermelho">vermelho</label>
+      <label>Selecione as suas cores preferidas: </label>
+      <br />
+      <input type="checkbox" name="azul" id="azul" />
+      <label for="azul">azul</label>
+      <br />
+      <input type="checkbox" name="verde" id="verde" />
+      <label for="verde">verde</label>
+      <br />
+      <input type="checkbox" name="vermelho" id="vermelho" />
+      <label for="vermelho">vermelho</label>
     </div>
     <div>
-        <label>¿Secsu?: </label>
-        <br/>
-        <input type="radio" name="sexo" id="sexo_m" value="m"/>
-        <label for="sexo_m">Masculino</label>
-        <input type="radio" name="sexo" id="sexo_f" value="f"/>
-        <label for="sexo_f">Feminino</label>
+      <label>¿Secsu?: </label>
+      <br />
+      <input type="radio" name="sexo" id="sexo_m" value="m" />
+      <label for="sexo_m">Masculino</label>
+      <input type="radio" name="sexo" id="sexo_f" value="f" />
+      <label for="sexo_f">Feminino</label>
+    </div>
+    <div>
+      <label for="comentarios">Comentarios:</label>
+      <br />
+      <textarea
+        style="
+          border-radius: 50px;
+          background-color: transparent;
+          padding: 30px;
+          color: black;
+          resize: none;
+        "
+        name="comentarios"
+        id="comentarios"
+        cols="50"
+        rows="10"
+        minlength="1"
+        maxlength="1000"
+        placeholder="Faça um comentario sobre o nosso site 😎..."
+        required
+      ></textarea>
+    </div>
+    <div>
+      <button
+        style="
+        background-color: black; 
+        color: white
+        "
+        type="submit"
+        name="btn_comprar"
+        value="comprar"
+      >
+        comprar
+      </button>
     </div>
   </body>
 </html>
